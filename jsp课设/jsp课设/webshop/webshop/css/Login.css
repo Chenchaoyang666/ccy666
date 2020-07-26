@@ -1,0 +1,137 @@
+.container {
+  margin-top: 30px;
+  height: 485px;
+  background-color: #fff;
+}
+.login-img-box {
+  height: 485px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-img-box > img {
+  width: 68%;
+}
+.login-box {
+  height: 485px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-container {
+  width: 80%;
+  height: 280px;
+  border: #ed3f14 solid 1px;
+  margin-top: 80px;
+}
+.login-header {
+  height: 50px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 50px;
+  letter-spacing: 5px;
+  color: #fff;
+  background-color: #ed3f14;
+}
+.form-box {
+  width: 80%;
+  margin: 30px auto;
+}
+.ivu-col-span-1,
+.ivu-col-span-10,
+.ivu-col-span-11,
+.ivu-col-span-12,
+.ivu-col-span-13,
+.ivu-col-span-14,
+.ivu-col-span-15,
+.ivu-col-span-16,
+.ivu-col-span-17,
+.ivu-col-span-18,
+.ivu-col-span-19,
+.ivu-col-span-2,
+.ivu-col-span-20,
+.ivu-col-span-21,
+.ivu-col-span-22,
+.ivu-col-span-23,
+.ivu-col-span-24,
+.ivu-col-span-3,
+.ivu-col-span-4,
+.ivu-col-span-5,
+.ivu-col-span-6,
+.ivu-col-span-7,
+.ivu-col-span-8,
+.ivu-col-span-9 {
+  float: left;
+  flex: 0 0 auto;
+}
+.ivu-col-span-13 {
+  display: block;
+  width: 54.16666667%;
+}
+.ivu-col-offset-2 {
+  margin-left: 8.33333333%;
+}
+.ivu-col {
+  position: relative;
+  display: block;
+}
+
+.ivu-col-span-7 {
+  display: block;
+  width: 29.16666667%;
+}
+.label_input {
+  font-size: 14px;
+  width: 30px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  color: rgba(230, 48, 16, 0.829);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.text_field {
+  width: 180px;
+  height: 28px;
+  border-radius: 5px;
+  border: 1px solid #dddee1;
+  outline: none;
+  font-size: 14px;
+  padding: 6px 7px;
+}
+
+#btn_login {
+  font-size: 14px;
+
+  width: 120px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.863);
+  background-color: #da3911;
+  border-radius: 6px;
+  border: 0;
+  float: left;
+
+}
+
+#forget_pwd {
+  font-size: 12px;
+  color: rgba(167, 160, 160, 0.808);
+  text-decoration: none;
+  position: relative;
+  float: right;
+  top: 5px;
+}
+
+#forget_pwd:hover {
+  color: rgb(255, 94, 0);
+  text-decoration: underline;
+}
+
+#login_control {
+  padding: 0 28px;
+  margin-top: 20px;
+}

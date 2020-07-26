@@ -1,0 +1,39 @@
+.box {
+  width: 100%;
+  height: 35px;
+  background-color: #e3e4e5;
+}
+.nav {
+  margin: 0% auto;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.nav ul {
+  list-style: none;
+}
+.nav li {
+  float: left;
+  font-size: 14px;
+  line-height: 35px;
+  margin-right: 15px;
+  font-weight: bold;
+}
+.nav a {
+  text-decoration: none;
+  color: #999999;
+  padding-left: 15px;
+  border-left: 1px solid #ccc;
+  cursor: pointer;
+}
+.location {
+  color: #999999;
+}
+.first {
+  color: #999999;
+}
+.first a:first-child {
+  padding-left: 3px;
+  border-left: none;
+}
