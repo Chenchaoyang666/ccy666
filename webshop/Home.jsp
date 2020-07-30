@@ -12,16 +12,7 @@
   <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
   <script>
     $(function () {
-      $("div[id]").each(function (i, e) {
-        var price = parseFloat($(this).find(".price").text());
-        var title = $(this).find(".title").text();
-        var pic = $(this).find(".pic").attr("src");
-        $(this).find(".add").click(function () {
-          if (localStorage.getItem("token") != "null" && localStorage.getItem("token")) {
-            $(window).attr('location', 'ope.jsp?op=intocar&price=' + price + '&title=' + title + '&pic=' + pic);
-          }
-        });
-      });
+      $("#div1").load("opedemo.jsp");
     });
     window.onload = function () {
       var t = "<%=t%>";
@@ -84,72 +75,7 @@
           </div>
         </div>
         <!-- 内容 -->
-        <div class="seckill-content">
-          <div class="seckill-item" id="prod1">
-            <div class="seckill-item-img">
-              <img src="img/seckill-item1.jpg" class="pic">
-            </div>
-            <div class="seckill-item-info">
-              <p class="title">【赠小风扇】维他 柠檬茶250ml*32盒 礼品装 整箱</p>
-              <p>
-                <span class="seckill-price text-danger">￥<span class="price">71.9</span></span>
-                <span class="seckill-old-price"><s>89.6</s></span>
-                <a style="float: right;margin-top: 7px;font-size: 18px;font-weight: bold;" class="add">+</a>
-              </p>
-            </div>
-          </div>
-          <div class="seckill-item" id="prod2">
-            <div class="seckill-item-img">
-              <img src="img/seckill-item2.jpg" class="pic">
-            </div>
-            <div class="seckill-item-info">
-              <p class="title">全新升级版6英寸护眼非反光电子墨水</p>
-              <p>
-                <span class="seckill-price text-danger">￥<span class="price">989</span></span>
-                <span class="seckill-old-price"><s>1299</s></span>
-                <a style="float: right;margin-top: 7px;font-size: 18px;font-weight: bold;" class="add">+</a>
-              </p>
-            </div>
-          </div>
-          <div class="seckill-item" id="prod3">
-            <div class="seckill-item-img">
-              <img src="img/seckill-item3.jpg" class="pic">
-            </div>
-            <div class="seckill-item-info">
-              <p class="title">粮悦 大吃兄糯米锅巴 安徽特产锅巴糯米原味400g*2盒</p>
-              <p>
-                <span class="seckill-price text-danger">￥<span class="price">21.8</span></span>
-                <span class="seckill-old-price"><s>49</s></span>
-                <a style="float: right;margin-top: 7px;font-size: 18px;font-weight: bold;" class="add">+</a>
-              </p>
-            </div>
-          </div>
-          <div class="seckill-item" id="prod4">
-            <div class="seckill-item-img">
-              <img src="img/seckill-item4.jpg" class="pic">
-            </div>
-            <div class="seckill-item-info">
-              <p class="title">【京东超市】清风（APP）抽纸 原木纯品金装系列 3层</p>
-              <p>
-                <span class="seckill-price text-danger">￥<span class="price">49.9</span></span>
-                <span class="seckill-old-price"><s>59</s></span>
-                <a style="float: right;margin-top: 7px;font-size: 18px;font-weight: bold;" class="add">+</a>
-              </p>
-            </div>
-          </div>
-          <div class="seckill-item" id="prod5">
-            <div class="seckill-item-img">
-              <img src="img/seckill-item5.jpg" class="pic">
-            </div>
-            <div class="seckill-item-info">
-              <p class="title">NIKE耐克 男子休闲鞋 AIR MAX 90 ESSENTIAL 气垫</p>
-              <p>
-                <span class="seckill-price text-danger">￥<span class="price">559.9</span></span>
-                <span class="seckill-old-price"><s>759.9</s></span>
-                <a style="float: right;margin-top: 7px;font-size: 18px;font-weight: bold;" class="add">+</a>
-              </p>
-            </div>
-          </div>
+        <div class="seckill-content" id="div1">
         </div>
       </div>
       <div class="item-class">

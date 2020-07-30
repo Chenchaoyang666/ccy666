@@ -62,6 +62,7 @@
 			if(password.equals(pwd)){
 			rs.close();
 			pstat.close();
+			conn.close();
 			response.sendRedirect("Home.jsp?token="+token);
 			}else{response.sendRedirect("Login.jsp");}
 		}
