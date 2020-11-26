@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script type="module">
+    const s = new Set();
+    [1, 2, 3].map(x => s.add(x));
+    console.log(s);
+    import Stack from './stack.js';
+    const st = new Stack();
+    st.push(s);
+    console.log(st.size());
+</script>
+
+</html>
